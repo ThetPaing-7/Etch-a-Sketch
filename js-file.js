@@ -12,7 +12,14 @@ for(let i = 0; i < numberOfSquares; i++){
     squares[i].style.height = "100px";
     squares[i].style.backgroundColor = "blue";
     squares[i].style.margin = "3px";
-    squares[i].style.flexGrow = "1";
+    squares[i].style.flexShrink = "0";
     container.appendChild(squares[i]);
+
+    squares[i].addEventListener("mouseover",(event)=>{
+       event.target.style.backgroundColor = "red";
+
+    })
+
+
     
 }
