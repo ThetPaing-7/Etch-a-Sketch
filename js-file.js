@@ -1,7 +1,19 @@
 //Number of squares
-const numberOfSquares = 256; 
+let numberOfSquares; 
 // Select the container
 let container = document.getElementById("container");
+// Select the button and ask for the square size
+let numberOfSquaresBtn = document.getElementById("userGivenSquaresBtn");
+
+numberOfSquaresBtn.addEventListener("click",()=>{
+    numberOfSquares = parseInt(prompt("How many squares per grid?"))
+    
+});
+
+console.log(numberOfSquares);
+
+
+
 
 let squares = [];
 
